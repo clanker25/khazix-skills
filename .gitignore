@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Syncthing / cloud-sync conflict copies
+.sync-conflict-*
+
+# Local recovery / corrupted git directories
+.git.corrupt-*
+
+# Tessl auto-generated tile files (regenerated on every publish)
+*/tile.json
+
+# Local Claude Code project settings
+.claude/settings.local.json
+
+# Internal project instructions (not for public repo). AGENTS.md holds the public maintainer rules and is tracked.
+CLAUDE.md
+
+# …except eval fixtures: those CLAUDE.md files are test material, not secrets
+!*/evals/fixtures/**/CLAUDE.md
+
+__pycache__/
+*.pyc
